@@ -179,6 +179,8 @@ main {
 .course {
     padding: 10px;
     height: 320px;
+    max-width:252px;
+    width: 100%;
     border-radius: 15px;
     background-color: var(--secondary-bg-color);
     box-shadow: 2px 3px 30px rgb(189, 187, 187);
@@ -223,4 +225,43 @@ main {
     padding: 5px 10px;
     border-radius: 50px;
     background-color: #f8c3b7;
+}
+/* for tablet device */
+@media only screen and (max-width:992px) {
+    main {
+        padding: 0px 30px;
+    }
+    .players,
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+        row-gap:50px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* for mobile device */
+@media only screen and (max-width:678px) {
+    main {
+        padding:0px;
+    }
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .player {
+        justify-content: center;
+    }
+    .players,
+    .blogs,
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog {
+        flex-direction: column;
+        text-align: center;
+    }
+    .course {
+        margin: 0 auto;
+    }
 }
