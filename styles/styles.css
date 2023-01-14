@@ -33,6 +33,7 @@ header {
 /* nav */
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1000px;
@@ -60,6 +61,7 @@ nav {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -247,7 +249,6 @@ main {
     }
     nav {
         justify-content: center;
-        flex-wrap: wrap;
     }
     .player {
         justify-content: center;
