@@ -1,12 +1,13 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* define all color and attribute */
+/* define all color and fonts */
 :root {
     --primary-text-color: #000000;
     --secondary-text-color: #FFFFFF;
     --tertiary-text-color: #562EFF;
     --quaternary-text-color: #9F9F9F;
+    --quinary-text-color: #ED6B4F;
     --primary-bg-color: #562EFF;
     --secondary-bg-color: #FFFFFF;
     --tertiary-bg-color: #E5E5E5;
@@ -88,6 +89,7 @@ main {
     background-color: var(--secondary-bg-color);
     padding: 30px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .section_title {
@@ -97,11 +99,12 @@ main {
     margin-bottom: 30px;
 }
 
-.blog-title {
+.blog_title {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 34px;
-    color: var(--primary-text-color);
+    /* color: var(--primary-text-color); */
+    margin-bottom: 10px;
 }
 
 /* top players section */
@@ -137,7 +140,7 @@ main {
 /* top blog section */
 .blogs {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
 
@@ -153,14 +156,76 @@ main {
     margin-right: 16px;
 }
 
-.blog_author {
+.blog_author,
+.author_name-course {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+
+.blog_author {
     color: var(--quaternary-text-color);
 }
 
-.blog_author_name {
+.author_name-blog {
     text-decoration: none;
     color: var(--tertiary-text-color);
+}
+
+/* latest course section */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 94px;
+
+}
+.course{
+
+    padding: 10px;
+    height: 320px;
+    border-radius: 15px;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 2px 3px 30px rgb(189, 187, 187);
+    position: relative;
+
+
+}
+.course_thumb img {
+    width: 224px;
+    height: 104px;
+    margin-bottom: 10px;
+}
+
+.author_name-course,
+.rating_hours {
+    color: var(--quinary-text-color);
+}
+.course_rating{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    bottom: 15px;
+}
+.course_rating_div{
+    
+}
+.filled,
+.empty,
+.rating_hours {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.filled {
+    color: #FFC014;
+}
+
+.empty {
+    color: #AEAEAE;
+}
+.rating_hours_div{
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #f8c3b7;
 }
