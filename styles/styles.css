@@ -1,0 +1,53 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* define all color and attribute */
+:root {
+    --primary-text-color: #000000;
+    --secondary-text-color: #FFFFFF;
+    --tertiary-text-color: #562EFF;
+    --quaternary-text-color: #9F9F9F;
+    --primary-bg-color: #562EFF;
+    --secondary-bg-color: #FFFFFF;
+    --tertiary-bg-color: #E5E5E5;
+    --primary-font: font-family: 'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* header start */
+/* nav */
+nav {
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 285px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-logo img {
+    width: 40px;
+    height: 50px;
+    margin-right: 15px;
+}
+.nav-title{
+    color: var(--secondary-text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
